@@ -1,0 +1,127 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #164444;
+  /*#2748e3 #164444*/
+}
+.about .about__title {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  color: #fff;
+}
+.about .about__title h2 {
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content {
+  display: flex;
+  padding-left: 30px;
+}
+.content__left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.content .content__right {
+  width: 20%;
+  margin: auto;
+}
+.content .content__right img {
+  width: 70%;
+  /*color: #d86127;*/
+  /*filter: invert(0.35) sepia(1) saturate(1000%);*/
+}
+/*Cards*/
+.container {
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background: #242625;
+  border-radius: 10px;
+  margin: 20px;
+}
+.card__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card__info {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.card__button {
+  padding: 10px;
+  border-radius: 50px;
+  background: #164444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 50px auto;
+}
+/*Next*/
+.next {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.next .btn2 {
+  padding: 10px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.next .btn2:hover {
+  background: #242625;
+  color: #fff;
+}
+.invert {
+  filter: invert(1);
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content__left {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .content__right {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+  }
+  .content .content__right img {
+    width: 100%;
+  }
+}
